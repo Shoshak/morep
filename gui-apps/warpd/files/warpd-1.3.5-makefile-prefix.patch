@@ -1,0 +1,11 @@
+diff --git a/Makefile b/Makefile
+index 064ac65..86d67c0 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,5 @@
+ VERSION=1.3.5
+-PREFIX?=/usr/local
++PREFIX?=/usr
+ COMMITSTR=$(shell commit=$$(git rev-parse --short HEAD 2> /dev/null) && echo " (built from: $$commit)")
+ 
+ ifeq ($(shell uname -s), Darwin)
